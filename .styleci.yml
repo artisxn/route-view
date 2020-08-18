@@ -1,0 +1,34 @@
+risky: false
+
+version: 7
+
+preset: laravel
+
+tab-width: 4
+
+use-tabs: false
+
+enabled:
+  - long_array_syntax
+  - unalign_double_arrow
+
+disabled:
+  - short_array_syntax
+
+finder:
+  exclude:
+    - "tests"
+  name:
+    - "*.php"
+  not-name:
+    - "*Stub.php"
+  contains:
+    - "Foo"
+  not-contains:
+    - "config"
+  path:
+    - "foo/Stuff"
+  not-path:
+    - "libraries"
+  depth:
+    - "< 3"
